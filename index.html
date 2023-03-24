@@ -1,30 +1,187 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Login</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="login-form">
-  <form>
-    <h1>Login</h1>
-    <div class="content">
-      <div class="input-field">
-        <input type="email" placeholder="Email" autocomplete="nope">
-      </div>
-      <div class="input-field">
-        <input type="password" placeholder="Password" autocomplete="new-password">
-      </div>
-      <a href="#" class="link">Forgot Your Password?</a>
-    </div>
-    <div class="action">
-      <button>Register</button>
-      <button>Sign in</button>
-    </div>
-  </form>
-</div>
+<html>
+    <title>project web page </title>
 
-</body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+    </title>
+    <!-- <style>
+        {
+            box-sizing: border-box;
+
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+            padding: auto;
+            margin: 2px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 12px;
+        }
+        .navbar li a:hover {
+            background-color: darkred;
+        }
+        .search {
+            float: right;
+            color: whitesmoke;
+            padding: 12px 75px;
+
+
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 250px;
+            padding: 3px 17px;
+
+
+        }
+        header {
+            border: 1px solid red;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 123px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: cursive;
+            margin: 0px;
+            h
+        }
+
+        .BOX {
+            border: 2PX solid black;
+            background: darkgrey;
+            margin: 0 4px;
+            padding: 35px;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+
+        }
+    </style>  -->
+</head>
+
+<body>
+
+    <body bgcolor="whitesmoke">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="web.html">COMPONENT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="img.html">CIRCUIT</a></li>
+                    <li><a href="code.html">CODING</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search this websites">
+                    </div>
+
+                </ul>
+            </nav>
+        </header>
+        <header class="TOP">
+            <h3>Welcome to Automatic Irrigation System</h3>
+            <div class="container">
+                <div class="BOX">
+                    <h4 class="HEADING">Abstract</h4>
+                    <p>In this poster an automation of farm
+                        irrigation and soil moisture control by
+                        Arduino using soil moisture sensor
+                        and L293D module. This automatic
+                        irrigation system senses the moisture
+                        content of the soil and automatically
+                        switches the pump when the power is on.
+                        A proper usage of irrigation system is
+                        very necessary because the main reason
+                        is the shortage of land reserved water
+                        due to lack of rain, spontaneous use of
+                        water as a result large amounts of water
+                        goes waste.</p>
+                </div>
+                <div class="BOX">
+                    <h4 class="HEADING">Introduction</h4>
+                    <p>In this project, we will make an
+                        automatic irrigation system using
+                        Arduino microcontroller. Automatic
+                        Irrigation system monitors the soil
+                        moisture and depending on set points
+                        turns on/off the pump which is
+                        connected to the relay. This way you can
+                        keep soil moisture to a set point. This
+                        system automatically waters the plants
+                        when we are on vacation. The project is
+                        designed to develop an automatic
+                        irrigation system which switches the
+                        pump motor ON/OFF sensing the
+                        moisture content of the soil. This project
+                        requires Arduino board having inbuilt
+                        ATMega328 microcontroller.</p>
+                </div>
+                <div class="BOX">
+                    <h4 class="HEADING">Components Required</h4>
+                    <ol>
+                        <li>Arduino Uno</li>
+                        <li>Soil moisture sensor</li>
+                        <li>OLED</li>
+                        <li>Relay</li>
+                        <li>Connecting Jumpers</li>
+                        <li>Breadboard</li>
+                        <li>Pump</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="BOX">
+                <h4 class="HEADING">Working of Automatic
+                    Irrigation System</h4>
+                <p>The soil moisture sensor senses the
+                    moisture present in the soil and gives the
+                    output to Arduino. The output of the
+                    sensor will be from 0-1023. The moisture
+                    is measured in percentage, therefore we
+                    should map these values to 0-100.
+                    Whenever the moisture value is lower
+                    than the value we have set inside our
+                    code as the threshold value, the relay will
+                    turn ON and the valve will turn open
+                    and whenever the moisture value is
+                    lower than this threshold value, the relay
+                    will relay will turn OFF and the valve
+                    will get closed.</p>
+            </div>
+        </header>
+        <center>
+        <fieldset>
+          
+            <img src="image1.jpeg" alt="" width="500" height="360">
+
+
+        </fieldset>
+    </center>
+
+
+
+
+    </body>
+
 </html>
